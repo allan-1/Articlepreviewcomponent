@@ -1,0 +1,149 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+.drawer-ctnt{
+    padding: 10px;
+    line-height: 2;
+    word-spacing: 2px;
+}
+.drawer-ctnt h3{
+    font-weight: 700;
+    font-size: 30px;
+}
+.drawer-ctnt p{
+    font-weight: 500;
+
+}
+.michelle-image img{
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+}
+.michelle-name h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+.michelle-name p{
+    font-size: 13px;
+}
+.michelle-image{
+    display: inline-block;
+    margin: 40px 0;
+}
+.michelle-name{
+    display: inline-block;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.Desaturated {
+    color: hsl(214, 17%, 51%)
+}
+.Grayish {
+    color: hsl(212, 23%, 69%);
+}
+.Light-Grayish {
+    color: hsl(210, 46%, 95%);
+}
+.Very-Dark-Grayish {
+    color: hsl(217, 19%, 35%);
+}
+.article{
+    /* margin: 10px; */
+    padding: 20px;
+}
+.pop-btn{
+    position: absolute;
+    right: -100px;
+    top: 130px;
+}
+.popup{
+    transform: scale(0);
+}
+.active{
+    background-color:hsl(217, 19%, 35%);
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    width: 13rem;
+    text-align: center;
+    border-radius: 7px;
+    padding: 4px;
+    position: relative;
+    bottom: 85px;
+    right: 110px;
+    transform: scale(1);
+    transition: 200ms ease-in-out;
+}
+.active::after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    height: 0;
+    width: 0;
+    border: 15px solid transparent;
+    border-top-color: hsl(217, 19%, 35%);
+    margin-bottom: -15px;
+}
+.active a{
+    color: hsl(210, 46%, 95%);
+}
+.active a:hover{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+@media(max-width: 900px){
+    .article{
+        margin: 0;
+        padding: 0;
+    }
+    .drawer img{
+        width: 370px;
+        border-radius: 10px;
+    }
+    .drawer-ctnt{
+        font-size: small;
+        margin: 0 20px;
+    }
+    .para{
+        margin: 20px 0;
+    }
+    .michelle-image img{
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    }
+    .michelle-name h3{
+    font-size: 10px;
+    font-weight: 700;
+    }
+    .michelle-name p{
+        font-size: 10px;
+    }
+    .pop-btn{
+    position: absolute;
+    right: -4px;
+    top: 60px;
+    }
+    .active{
+        background-color:hsl(217, 19%, 35%);
+        word-spacing: 10px;
+        letter-spacing: 3px;
+        width: 13rem;
+        text-align: center;
+        border-radius: 7px;
+        padding: 4px;
+        position: relative;
+        bottom: 85px;
+        right: 1350px;
+        transform: scale(1);
+        transition: 200ms ease-in-out;
+    }
+}
