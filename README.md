@@ -1,2 +1,2 @@
 # Articlepreviewcomponent
-An article review website inspired by frontend mrntor
+An article review website inspired by frontend mentor
